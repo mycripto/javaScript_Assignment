@@ -8,7 +8,6 @@ function kilometerToMeter(km) {
     return "Please enter a positive number"; //error msg
   }
 }
-// console.log(kilometerToMeter(5));
 
 // budgetCalculator
 function budgetCalculator(watch, phone, laptop) {
@@ -54,14 +53,13 @@ function budgetCalculator(watch, phone, laptop) {
   }
   return total;
 }
-// console.log(budgetCalculator(0, 4, 5));
 
 //hotelCost
 function hotelCost(daysToStay) {
   let rateFirst, rateSecond, rateThird, maxForTwenty;
-  rateFirst = 100;
-  rateSecond = 80;
-  rateThird = 50;
+  rateFirst = 100; //$100 per day
+  rateSecond = 80; //$80 per day
+  rateThird = 50; //$50 per day
 
   if (Number.isInteger(daysToStay) && daysToStay >= 0) {
     if (daysToStay <= 10) {
@@ -77,7 +75,6 @@ function hotelCost(daysToStay) {
     return "invalid number";
   }
 }
-// console.log(hotelCost(25));
 
 //megaFriend
 function megaFriend(friends) {
@@ -92,10 +89,11 @@ function megaFriend(friends) {
   //   console.log(longestName);
   return longestName;
 }
-// megaFriend(["111", "1114", "3353", "4444"]);
 
+/*
 console.log(` 
-kilometerToMeter: ${kilometerToMeter(2)},
-budgetCalculator: ${budgetCalculator(4, 5, 6)},
-hotelCost: ${hotelCost(45)},
-megaFriend: ${megaFriend(["Suman", "raja", "salam uddin"])};`);
+kilometerToMeter: ${kilometerToMeter(9)},
+budgetCalculator: ${budgetCalculator(1, 1, 1)},
+hotelCost: ${hotelCost(20)},
+megaFriend: ${megaFriend(["Suman", "Rajandran", "Salam Uddin"])};`);
+*/
