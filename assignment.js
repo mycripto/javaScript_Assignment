@@ -2,7 +2,7 @@
 
 // kilometerToMeter
 function kilometerToMeter(km) {
-  if (Number.isInteger(km)) {
+  if (Number.isInteger(km) && km > 0) {
     return km * 1000; // 1km = 1000m.
   } else {
     return "Please enter a positive number"; //error msg
@@ -91,6 +91,7 @@ function megaFriend(friends) {
 }
 
 /*
+//SelfTest: 
 console.log(` 
 kilometerToMeter: ${kilometerToMeter(9)},
 budgetCalculator: ${budgetCalculator(1, 1, 1)},
